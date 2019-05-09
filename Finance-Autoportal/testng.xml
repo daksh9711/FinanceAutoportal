@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.finance.Dashboard.DashboardTC"/>
+      <class name="com.finance.SignUp.SignUp"/>
+      <class name="com.finance.LeadForm.LeadFormTC"/>
+      <class name="com.finance.loanapplication.LoanApplicationsPage"/>
+      <class name="com.finance.LeadForm.LeadFormPageObject"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
