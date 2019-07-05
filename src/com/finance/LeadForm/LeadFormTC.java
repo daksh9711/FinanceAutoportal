@@ -39,9 +39,7 @@ import com.lms.utilities.BaseTest;
 
 public class LeadFormTC extends BaseTest {
  int j=2;
- //myeclipse
- 
- //Testmine
+
  
  
 	
@@ -58,6 +56,7 @@ public class LeadFormTC extends BaseTest {
 		 
 		  driver.findElement(By.xpath(properties.getProperty("LoApp"))).click();
 		  System.out.println("Loappp click");
+		  driver.get("https://stagefinance.autoportal.com/createlead");
 		// System.out.println(driver.manage().getCookies());
 		// System.out.println("cookie "+ driver.manage().getCookieNamed("XSRF-TOKEN"));
 		 driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
@@ -113,7 +112,7 @@ public class LeadFormTC extends BaseTest {
 			{
 		
 		// Thread.sleep(2000);
-	      driver.findElement(By.xpath(properties.getProperty("AddCust"))).click();
+	   //   driver.findElement(By.xpath(properties.getProperty("AddCust"))).click();
 	      //driver.findElement(By.xpath(properties.getProperty("XpathSkiptoManuallink"))).click();
 
 	      //MyBank2 variable is defined in Base Test. It is taking input from User for Bank which leads should be created.
@@ -422,7 +421,7 @@ public class LeadFormTC extends BaseTest {
 			 js.executeScript("window.scrollBy(0,800)");
 			
 			 driver.findElement(By.xpath(properties.getProperty("UploadNowAddressxpath"))).click();
-			 Runtime.getRuntime().exec("C:\\Users\\user\\Documents\\Test.exe");
+			// Runtime.getRuntime().exec("C:\\Users\\user\\Documents\\Test.exe");
 			 Thread.sleep(3000);
 			
 			
@@ -444,7 +443,7 @@ public class LeadFormTC extends BaseTest {
 			 
 			 WebElement ConfirmButton=driver.findElement(By.id(properties.getProperty("ConfirmButtonID")));
 			 wait.until(ExpectedConditions.visibilityOf(ConfirmButton));
-			 ConfirmButton.click();
+		//	 ConfirmButton.click();
 			 Reporter.log("Test End");
 			
 			
