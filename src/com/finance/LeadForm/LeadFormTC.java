@@ -46,7 +46,7 @@ public class LeadFormTC extends BaseTest {
 	@Test
 
 	  public void LeadFormSubmission() throws IOException, InterruptedException {
-		userinput2121;
+		userinput2121remote1;
 		LaunchBrowserChrome();
 		LoginforLeadCreate();
 		Reporter.log("Test case started");
